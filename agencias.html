@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencias - Turismo Jujuy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <!-- logo and list ... -->
+            <a href="index.html" class="logo" aria-label="Volver al inicio">
+                <svg viewBox="0 0 24 24"><path d="M14 6l-4 4 4 4M5 5h14v14H5z"/></svg> 
+                Jujuy<span style="color: var(--text-main)">Viajes</span>
+            </a>
+            
+            <ul class="menu">
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="agencias.html" style="color: var(--primary-color);" aria-current="page">Agencias</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px;">Contacto</a></li>
+                <li>
+                    <label class="theme-switch" aria-label="Cambiar modo oscuro">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="agencias-header">
+            <h1>Agencias Certificadas</h1>
+            <p>Conoce a los expertos locales que harán de tu viaje una experiencia inolvidable. Pasa el cursor por las tarjetas para más info.</p>
+        </section>
+
+        <section class="agencias-grid">
+            <!-- Agencia 1 -->
+            <article class="flip-card" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://picsum.photos/400/300?random=14" alt="Agencia Aventura Norte">
+                        <div class="flip-card-front-content">
+                            <h3>Aventura Norte</h3>
+                            <p>Especialistas en la Quebrada y la Puna.</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Aventura Norte</h3>
+                        <p>Más de 10 años organizando expediciones 4x4 y trekking guiado en Jujuy.</p>
+                        
+                        <div class="rating-container">
+                            <h4>Calificar (Puro CSS)</h4>
+                            <div class="star-rating">
+                                <input type="radio" id="star5-1" name="rate1" value="5"><label for="star5-1" aria-label="5 estrellas"></label>
+                                <input type="radio" id="star4-1" name="rate1" value="4"><label for="star4-1" aria-label="4 estrellas"></label>
+                                <input type="radio" id="star3-1" name="rate1" value="3"><label for="star3-1" aria-label="3 estrellas"></label>
+                                <input type="radio" id="star2-1" name="rate1" value="2"><label for="star2-1" aria-label="2 estrellas"></label>
+                                <input type="radio" id="star1-1" name="rate1" value="1"><label for="star1-1" aria-label="1 estrella"></label>
+                            </div>
+                        </div>
+                        <a href="contacto.html" class="btn-secondary">Contactar</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Agencia 2 -->
+            <article class="flip-card" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://picsum.photos/400/300?random=15" alt="Agencia Yungas Wild">
+                        <div class="flip-card-front-content">
+                            <h3>Yungas Wild</h3>
+                            <p>Ecoturismo y avistaje de flora y fauna.</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Yungas Wild</h3>
+                        <p>Pioneros en turismo sustentable y recorridos botánicos por el PN Calilegua.</p>
+                        
+                        <div class="rating-container">
+                            <h4>Calificar (Puro CSS)</h4>
+                            <div class="star-rating">
+                                <input type="radio" id="star5-2" name="rate2" value="5"><label for="star5-2" aria-label="5 estrellas"></label>
+                                <input type="radio" id="star4-2" name="rate2" value="4"><label for="star4-2" aria-label="4 estrellas"></label>
+                                <input type="radio" id="star3-2" name="rate2" value="3"><label for="star3-2" aria-label="3 estrellas"></label>
+                                <input type="radio" id="star2-2" name="rate2" value="2"><label for="star2-2" aria-label="2 estrellas"></label>
+                                <input type="radio" id="star1-2" name="rate2" value="1"><label for="star1-2" aria-label="1 estrella"></label>
+                            </div>
+                        </div>
+                        <a href="contacto.html" class="btn-secondary">Contactar</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Agencia 3 -->
+            <article class="flip-card" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://picsum.photos/400/300?random=16" alt="Agencia BiciJujuy">
+                        <div class="flip-card-front-content">
+                            <h3>CicloJujuy Extremo</h3>
+                            <p>Travesías en mountain bike increíbles.</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>CicloJujuy Extremo</h3>
+                        <p>Guías certificados internacionalmente para las mejores rutas de alta montaña.</p>
+                        
+                        <div class="rating-container">
+                            <h4>Calificar (Puro CSS)</h4>
+                            <div class="star-rating">
+                                <input type="radio" id="star5-3" name="rate3" value="5"><label for="star5-3" aria-label="5 estrellas"></label>
+                                <input type="radio" id="star4-3" name="rate3" value="4"><label for="star4-3" aria-label="4 estrellas"></label>
+                                <input type="radio" id="star3-3" name="rate3" value="3"><label for="star3-3" aria-label="3 estrellas"></label>
+                                <input type="radio" id="star2-3" name="rate3" value="2"><label for="star2-3" aria-label="2 estrellas"></label>
+                                <input type="radio" id="star1-3" name="rate3" value="1"><label for="star1-3" aria-label="1 estrella"></label>
+                            </div>
+                        </div>
+                        <a href="contacto.html" class="btn-secondary">Contactar</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jujuy Viajes. Desarrollado con ❤️ para los viajeros.</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+</body>
+</html>

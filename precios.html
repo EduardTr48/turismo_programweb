@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios - Turismo Jujuy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <!-- logo and list -->
+            <a href="index.html" class="logo" aria-label="Volver al inicio">
+                <svg viewBox="0 0 24 24"><path d="M14 6l-4 4 4 4M5 5h14v14H5z"/></svg> 
+                Jujuy<span style="color: var(--text-main)">Viajes</span>
+            </a>
+            <ul class="menu">
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="agencias.html">Agencias</a></li>
+                <li><a href="precios.html" style="color: var(--primary-color);" aria-current="page">Precios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px;">Contacto</a></li>
+                <li>
+                    <label class="theme-switch" aria-label="Cambiar modo oscuro">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="precios-header">
+            <h1>Tarifas y Paquetes</h1>
+            <p>Compara nuestras opciones y elige la que más se adapte a tu viaje soñado por Jujuy.</p>
+        </section>
+
+        <section class="comparativa-container">
+            <h2 class="section-title">Tabla Comparativa de Paquetes</h2>
+            <table class="tabla-precios">
+                <thead>
+                    <tr>
+                        <th>Características</th>
+                        <th><span class="precio-tooltip" data-info="Ideal para escapadas de fin de semana">Básico</span></th>
+                        <th><span class="precio-tooltip" data-info="El más elegido por familias">Clásico</span></th>
+                        <th><span class="precio-tooltip" data-info="Experiencia VIP con todo incluido">Premium</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Días de Recorrido</td>
+                        <td>3 Días</td>
+                        <td>5 Días</td>
+                        <td>7 Días</td>
+                    </tr>
+                    <tr>
+                        <td>Alojamiento</td>
+                        <td>Hostel / Cabaña 3★</td>
+                        <td>Hotel 4★</td>
+                        <td>Hotel Boutique 5★</td>
+                    </tr>
+                    <tr>
+                        <td>Excursiones Incluidas</td>
+                        <td>1 (Quebrada)</td>
+                        <td>3 (Quebrada, Puna, Valles)</td>
+                        <td><span class="precio-tooltip" data-info="Visitas personalizadas sin límite de zona">Todas las zonas</span></td>
+                    </tr>
+                    <tr>
+                        <td>Guía Local</td>
+                        <td>Grupal</td>
+                        <td>Grupal Reducido</td>
+                        <td>Privado</td>
+                    </tr>
+                    <tr>
+                        <td>Precio Estimado (ARS)</td>
+                        <td><strong>$250.000</strong></td>
+                        <td><strong>$480.000</strong></td>
+                        <td><strong>$950.000</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jujuy Viajes. Desarrollado con ❤️ para los viajeros.</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+</body>
+</html>

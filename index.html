@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Jujuy - Atrapando Paisajes</title>
+    <!-- Modern web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <a href="index.html" class="logo" aria-label="Volver al inicio">
+                <svg viewBox="0 0 24 24"><path d="M14 6l-4 4 4 4M5 5h14v14H5z"/></svg> 
+                Jujuy<span style="color: var(--text-main)">Viajes</span>
+            </a>
+            
+            <ul class="menu">
+                <li>
+                    <a href="destinos.html" aria-haspopup="true" aria-expanded="false">Destinos</a>
+                    <!-- Mega Menu -->
+                    <div class="mega-menu-content">
+                        <div class="mega-menu-column">
+                            <h4>Regiones</h4>
+                            <ul>
+                                <li><a href="destinos.html#quebrada">Quebrada de Humahuaca</a></li>
+                                <li><a href="destinos.html#puna">Puna Jujeña</a></li>
+                                <li><a href="destinos.html#yungas">Yungas (Selva)</a></li>
+                                <li><a href="destinos.html#valles">Valles</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h4>Tipos de Turismo</h4>
+                            <ul>
+                                <li><a href="destinos.html#naturaleza">Naturaleza y Aventura</a></li>
+                                <li><a href="destinos.html#cultural">Cultural e Histórico</a></li>
+                                <li><a href="destinos.html#gastronomia">Gastronómico</a></li>
+                                <li><a href="destinos.html#cicloturismo">Cicloturismo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="agencias.html">Agencias</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px;">Contacto</a></li>
+                <li>
+                    <!-- Dark Mode Toggle -->
+                    <label class="theme-switch" aria-label="Cambiar modo oscuro">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section with polygon mask -->
+        <section class="hero" id="home">
+            <video class="hero-video" autoplay muted loop playsinline poster="https://picsum.photos/1920/1080?random=1">
+                <source src="https://cdn.pixabay.com/video/2021/08/04/83908-584738522_tiny.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Descubre la Magia de Jujuy</h1>
+                <p>Naturaleza, cultura vibrante, cicloturismo y aventuras en el rincón más hermoso del norte argentino.</p>
+                <a href="destinos.html" class="btn-primary">Ver Destinos</a>
+            </div>
+        </section>
+
+        <!-- Destinos Destacados Section -->
+        <section class="destinos-destacados" id="destacados">
+            <h2 class="section-title">Destinos Destacados</h2>
+            <div class="cards-grid">
+                
+                <!-- Card 1 -->
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <!-- Unsplash high quality placeholder for Purmamarca -->
+                        <img src="https://picsum.photos/800/600?random=2" alt="Cerro de los 7 Colores en Purmamarca">
+                        <div class="card-overlay">
+                            <strong>Purmamarca</strong> | Atardeceres Mágicos
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cerro de los 7 Colores</h3>
+                        <p class="card-desc">Admira la belleza natural de sus cerros policromáticos y recorre el famoso Paseo de los Colorados.</p>
+                        <a href="destinos.html#purmamarca" aria-label="Ver más sobre Purmamarca">Ver más →</a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://picsum.photos/800/600?random=3" alt="Salinas Grandes, inmensidad blanca">
+                        <div class="card-overlay">
+                            <strong>Puna</strong> | Sal y Cielo
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Salinas Grandes</h3>
+                        <p class="card-desc">La tercera salina más grande del mundo, un desierto blanco que se confunde con el cielo infinito.</p>
+                        <a href="destinos.html#salinas" aria-label="Ver más sobre Salinas Grandes">Ver más →</a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://picsum.photos/800/600?random=4" alt="Selva de Yungas y montañas con nubes">
+                        <div class="card-overlay">
+                            <strong>Calilegua</strong> | Naturaleza Salvaje
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">P.N. Calilegua</h3>
+                        <p class="card-desc">Adéntrate en la selva de Yungas, ideal para trekking, cicloturismo y avistaje de flora y fauna única.</p>
+                        <a href="destinos.html#calilegua" aria-label="Ver más sobre Calilegua">Ver más →</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Animated CSS Keyframes Counter -->
+            <div class="counter-box">
+                <div class="counter-item">
+                    <h3 class="stat-number"></h3>
+                    <p>Agencias Certificadas</p>
+                </div>
+                <div class="counter-item">
+                    <h3 class="stat-number-2"></h3>
+                    <p>Rutas de Montaña</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios CSS Carousel Section -->
+        <section class="testimonios" aria-labelledby="testimonios-title">
+            <h2 id="testimonios-title" class="section-title">Lo que dicen nuestros viajeros</h2>
+            
+            <div class="carousel-container">
+                <!-- Pure CSS Logic -->
+                <input type="radio" name="slider" id="slide1" class="carousel-radio" checked>
+                <input type="radio" name="slider" id="slide2" class="carousel-radio">
+                <input type="radio" name="slider" id="slide3" class="carousel-radio">
+
+                <div class="carousel-slider">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <img src="https://picsum.photos/200/200?random=5" alt="Retrato de Laura">
+                        <blockquote>"Las rutas de cicloturismo por la Quebrada son imponentes. Una experiencia que volvería a repetir sin dudarlo."</blockquote>
+                        <h4>Laura M. - España</h4>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <img src="https://picsum.photos/200/200?random=6" alt="Retrato de Carlos">
+                        <blockquote>"Visitar las Salinas Grandes es sentir que caminas sobre las nubes. El servicio de las agencias fue de 10."</blockquote>
+                        <h4>Carlos G. - México</h4>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <img src="https://picsum.photos/200/200?random=7" alt="Retrato de Ana">
+                        <blockquote>"La comida, los paisajes, la gente... Jujuy lo tiene todo. Gracias a la web pudimos organizar nuestro viaje perfecto."</blockquote>
+                        <h4>Ana y Marcos - Argentina</h4>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <label for="slide1" aria-label="Ver testimonio 1"></label>
+                    <label for="slide2" aria-label="Ver testimonio 2"></label>
+                    <label for="slide3" aria-label="Ver testimonio 3"></label>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Jujuy Viajes</h4>
+                <p>Descubre el norte argentino con la mejor guía turística oficial online. Turismo responsable y aventura.</p>
+                <div class="social-links mt-4">
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.48-10 10.02 0 5 3.66 9.15 8.44 9.9v-7h-2.54V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.25.19 2.25.19v2.47h-1.27c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.94h-2.33v7C18.34 21.17 22 17.02 22 12.06c0-5.54-4.5-10.02-10-10.02z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2m-.2 2A3.6 3.6 0 004 7.6v8.8C4 18.4 5.6 20 7.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6C20 5.6 18.4 4 16.4 4H7.6m4.4 4b4.6 4.6a4.6 4.6 0 11-4.6-4.6m0 2a2.6 2.6 0 100 5.2 2.6 2.6 0 000-5.2m5.2-1.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Enlaces Útiles</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li class="mb-4"><a href="agencias.html">Agencias Certificadas</a></li>
+                    <li class="mb-4"><a href="precios.html">Ver Precios</a></li>
+                    <li class="mb-4"><a href="contacto.html">Contacto y Soporte</a></li>
+                    <li><a href="blog.html">Blog del Viajero</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Suscríbete ("Newsletter")</h4>
+                <p>Recibe ofertas de agencias y noticias de Jujuy.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required aria-label="Correo electrónico">
+                    <button type="submit">Suscribir</button>
+                </form>
+            </div>
+
+            <div class="footer-col footer-map">
+                <h4>Ubicación</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14482.028751508!2d-65.311311!3d-24.1855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4fd624b531%3A0xc6cb1e85a5afce93!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1sen!2sar!4v1680000000000!5m2!1sen!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de San Salvador de Jujuy"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jujuy Viajes. Desarrollado con ❤️ para los viajeros.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script src="js/theme.js"></script>
+</body>
+</html>

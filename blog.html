@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Turismo Jujuy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <!-- logo and list -->
+            <a href="index.html" class="logo" aria-label="Volver al inicio">
+                <svg viewBox="0 0 24 24"><path d="M14 6l-4 4 4 4M5 5h14v14H5z"/></svg> 
+                Jujuy<span style="color: var(--text-main)">Viajes</span>
+            </a>
+            <ul class="menu">
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="agencias.html">Agencias</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="blog.html" style="color: var(--primary-color);" aria-current="page">Blog</a></li>
+                <li><a href="contacto.html" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px;">Contacto</a></li>
+                <li>
+                    <label class="theme-switch" aria-label="Cambiar modo oscuro">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-header">
+            <h1>Crónicas de la Puna</h1>
+            <p>Historias, guías y consejos redactados por nuestros expertos locales.</p>
+        </section>
+
+        <section class="newspaper-wrapper">
+            <input type="radio" name="tag" id="tag-all" class="tag-radio" checked>
+            <input type="radio" name="tag" id="tag-tips" class="tag-radio">
+            <input type="radio" name="tag" id="tag-news" class="tag-radio">
+
+            <div class="blog-tags">
+                <label for="tag-all" class="tag-btn">Todas</label>
+                <label for="tag-tips" class="tag-btn">Consejos</label>
+                <label for="tag-news" class="tag-btn">Noticias</label>
+            </div>
+
+            <div class="newspaper-grid">
+                <!-- Featured -->
+                <article class="article-item featured" data-tag="news">
+                    <img class="article-img" src="https://picsum.photos/800/600?random=17" style="height:400px" alt="Salinas">
+                    <div class="article-content">
+                        <h3>Nuevos Circuitos de Salinas Grandes: Una mirada profunda</h3>
+                        <p>Descubre las rutas recientemente abiertas que exploran los rincones menos conocidos del desierto blanco. Historias de las comunidades locales y consejos para visitarlos.</p>
+                    </div>
+                </article>
+
+                <article class="article-item" data-tag="tips">
+                    <img class="article-img" src="https://picsum.photos/400/300?random=18" alt="Purmamarca">
+                    <h3>¿Qué empacar para la Quebrada?</h3>
+                    <p>La amplitud térmica exige capas. Sigue esta guía definitiva.</p>
+                </article>
+
+                <article class="article-item" data-tag="tips">
+                    <img class="article-img" src="https://picsum.photos/400/300?random=19" alt="Ruta">
+                    <h3>Previniendo el mal de altura</h3>
+                    <p>Consejos ancestrales como la hoja de coca e hidratación.</p>
+                </article>
+
+                <article class="article-item" data-tag="news">
+                    <img class="article-img" src="https://picsum.photos/400/300?random=20" alt="Selva">
+                    <h3>Avistaje del Yaguareté</h3>
+                    <p>Registros recientes en el PN Calilegua abren nuevas esperanzas.</p>
+                </article>
+
+                <article class="article-item" data-tag="news">
+                    <img class="article-img" src="https://picsum.photos/400/300?random=21" alt="Bici">
+                    <h3>Calendario de Rural Bike Valles</h3>
+                    <p>Las fechas del circuito anual de carreras MTB.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="blog-comments">
+            <h2>Comentarios de la Comunidad</h2>
+            <br>
+            <!-- Comentarios con avatares CSS -->
+            <div class="comment">
+                <div class="comment-avatar">M</div>
+                <div class="comment-content">
+                    <h5>Martín S.</h5>
+                    <p>Excelente artículo sobre empacar. Me salvó el abrigo extra en la Puna cuando la temperatura bajó a -5°C.</p>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-avatar" style="background: linear-gradient(135deg, #3b82f6, #93c5fd);">L</div>
+                <div class="comment-content">
+                    <h5>Lucía V.</h5>
+                    <p>¡Esperando con ansias poder ir a probar esos circuitos de mountain bike! Las fotos son espectaculares.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jujuy Viajes. Desarrollado con ❤️ para los viajeros.</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+</body>
+</html>
